@@ -1,0 +1,18 @@
+
+<h1>WELCOME OUR WEBSITE</h1>
+
+<h2>See the index of restaurants</h2>
+
+<!-- renvoie vers new.html.erb -->
+<%= link_to "Add new", new_restaurant_path %>
+
+<% @restaurants.each do |resto| %>
+  <h3>
+    <!-- renvoie vers show.html.erb -->
+    <%= link_to restaurant_path(resto) do %>
+      <%= resto.name %>
+    <% end %>
+  </h3>
+  <p><%= resto.category %></p>
+  <p><%= resto.address %></p>
+<% end %>

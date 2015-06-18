@@ -1,0 +1,15 @@
+// Place all the styles related to the Restaurant controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+<html>
+  <head>
+    <!-- [...] -->
+  </head>
+  <body>
+    <%= render "shared/navbar" %>
+    <%= yield %>
+    <%= render "shared/footer" %>
+    <!-- For inserting some analytics script (GA, Mixpanel..) -->
+    <%= render "shared/analytics" %>
+  </body>
+</html>
